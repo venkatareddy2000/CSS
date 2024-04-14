@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo classes</title>
+    <style>
+        /*The :hover selector is used to select elements when you mouse over them.*/
+        a:hover {
+            background-color: yellow;
+        }
+
+        /*The :link selector is used to select unvisited links.*/
+        a:link {
+            color: brown;
+        }
+
+        /*The :visited selector is used to select visited links.*/
+        a:visited {
+            color: red;
+        }
+
+        /*The :active selector is used to select and style the active link.*/
+        a:active {
+            color: blue;
+        }
+
+        /*The :target selector can be used to style the current active target element.*/
+        p:target {
+            background-color: blue;
+        }
+
+        /*The :focus selector is used to select the element that has focus.*/
+        input:focus {
+            background-color: bisque;
+            color: blue;
+        }
+
+        /*The :required selector selects form elements which are required.*/
+        input:required {
+            background-color: red;
+        }
+
+        /*The :optional selector selects form elements which are optional.*/
+        #phone-number:optional {
+            background-color: blue;
+            color: white;
+        }
+
+        /*The :read-only selector selects elements which are "readonly".*/
+        input:read-only {
+            background-color: black;
+            color: white;
+        }
+
+        /*The :read-write selector selects form elements which are "readable" and "writeable".*/
+        #Address:read-write {
+            background-color: aqua;
+            color: black;
+        }
+
+        /*The :valid selector selects form elements with a value that validates according to the element's settings.*/
+        #valid-number:valid {
+            background-color: cadetblue;
+            color: white;
+        }
+
+        /*The :invalid selector selects form elements with a value that does not validate according to the element's settings.*/
+        #valid-number:invalid {
+            background-color: red;
+            color: white;
+        }
+
+        /*The :disabled selector matches every disabled element (mostly used on form elements).*/
+        input:disabled {
+            background-color: cadetblue;
+            color: white;
+        }
+
+        /*The :default selector selects the default checked items to apply the styles.*/
+        input:default+label {
+            background-color: green;
+            color: white;
+        }
+
+        /*The :checked selector matches every checked <input> element (only for radio buttons and checkboxes) and <option> element.*/
+        input:checked {
+            height: 50px;
+            width: 50px;
+        }
+
+        /*The :in-range selector selects all elements with a value that is within a specified range.*/
+        #inrange:in-range {
+            background-color: red;
+            color: white;
+        }
+
+        /*The :out-of-range selector selects all elements with a value that is outside a specified range.*/
+        #inrange:out-of-range {
+            border: 5px solid blue;
+        }
+
+        /*The :enabled selector matches every enabled element (mostly used on form elements).*/
+        #Enabled:enabled {
+            background-color: yellow;
+            color: white;
+        }
+
+        /*The :empty selector matches every element that has no children (including text nodes).*/
+        p:empty {
+            height: 10px;
+            width: 50px;
+            background-color: red;
+        }
+
+        /*The :not(selector) selector matches every element that is NOT the specified element/selector.*/
+        h1:not(.heading) {
+            color: red;
+        }
+
+        /*The :first-child selector is used to select the specified selector, only if it is the first child of its parent.*/
+        p:first-child {
+            color: blue;
+        }
+
+        /*The :last-child selector matches every element that is the last child of its parent.*/
+        p:last-child {
+            color: red;
+        }
+
+        /*The :nth-child(n) selector matches every element that is the nth child of its parent.*/
+        p:nth-child(3) {
+            background-color: aquamarine;
+            color: blue;
+        }
+
+        /*The :nth-last-child(n) selector matches every element that is the nth child, regardless of type, of its parent, counting from the last child.*/
+        p:nth-last-child(2) {
+            background-color: chocolate;
+            color: blue;
+        }
+
+        /*The :only-child selector matches every element that is the only child of its parent.*/
+        p:only-child {
+            background-color: blue;
+            color: white;
+        }
+
+        /*The :first-of-type selector matches every element that is the first child, of a particular type, of its parent.*/
+        li:first-of-type {
+            background-color: yellow;
+        }
+
+        /*The :last-of-type selector matches every element that is the last child, of a particular type, of its parent.*/
+        li:last-of-type {
+            background-color: red;
+        }
+
+        /*The :nth-of-type(n) selector matches every element that is the nth child, of the same type (tag name), of its parent.*/
+        li:nth-of-type(3) {
+            background-color: blue;
+        }
+
+        /*The :only-of-type selector matches every element that is the only child of its type, of its parent.*/
+        h2:only-of-type {
+            background-color: violet;
+        }
+
+        /*The :nth-last-of-type(n) selector matches every element that is the nth child, of a particular type, of its parent, counting from the last child.*/
+        ol:nth-last-child(3) {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://www.youtube.com/watch?v=zTH86M8KkOU&list=PLzdWZT-ZJD09lGBkH4LIUwqsCWI7QPEXQ&index=7"
+        target="_blank">Youtube</a>
+    <p><a href="#name">Go to name</a></p>
+    <p><a href="#name1">Go to name1</a></p>
+    <p id="name">Hello Venkata</p>
+    <p id="name1">Hi Venkata Reddy</p>
+    <h3>Name : </h3><input type="text">
+    <h3>Email : </h3><input type="text" required>
+    <h3>Phone Number : </h3><input type="text" id="phone-number">
+    <h3>Account Number : </h3><input type="text" placeholder="123456789" readonly>
+    <h3>Address : </h3><input type="text" id="Address">
+    <h3>Amount : </h3><input type="number" min="1000" max="2000" id="valid-number">
+    <h3>Password : </h3><input type="text" value="venky@2000" disabled>
+    <div class="languages">
+        <input type="checkbox" checked><label>Telugu</label>
+        <input type="checkbox"><label>English</label>
+        <input type="checkbox"><label>Hindi</label>
+    </div>
+    <h3>In-Range</h3><input type="number" min="5" max="10" id="inrange">
+    <h3>Enabled</h3><input type="number" id="Enabled">
+    <p></p>
+    <h1 class="heading">heading1</h1>
+    <h1>heading2</h1>
+    <h1 class="heading">heading3</h1>
+    <div class="container1">
+        <p>paragraph 1</p>
+        <p>paragraph 2</p>
+        <p>paragraph 3</p>
+        <p>paragraph 4</p>
+        <p>paragraph 5</p>
+    </div>
+    <div>
+        <p>only child</p>
+    </div>
+    <ul>
+        <li>list1</li>
+        <li>list2</li>
+        <li>list3</li>
+        <li>list4</li>
+        <li>list5</li>
+    </ul>
+    <div>
+        <h2>heading2</h2>
+    </div>
+    <div>
+        <h2>heading</h2>
+        <h2>heading2</h2>
+    </div>
+    <ul>
+        <ol>list1</ol>
+        <ol>list2</ol>
+        <ol>list3</ol>
+        <ol>list4</ol>
+        <ol>list5</ol>
+    </ul>
+</body>
+
+</html>

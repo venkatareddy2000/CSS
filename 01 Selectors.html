@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            font-style: italic;
+        }
+
+        p {
+            text-align: center;
+            color: blue;
+        }
+
+        /*To apply style using the id selecor we need to use # before the selector
+            and the id has to be unique within the page*/
+        #h1tag {
+            color: red;
+            text-align: right;
+        }
+
+        /*Applying style to the para using class and we need to use a . symbol before writing the class name to
+            app;y styles*/
+        .para {
+            color: aqua;
+        }
+
+        /*To apply any style to any element present in the class we use class name followed by 
+            the element name*/
+        .para p {
+            text-align: left;
+            color: aqua;
+        }
+
+        .class-one {
+            color: red;
+        }
+
+        .class-two {
+            text-align: center;
+            font-size: 50px;
+        }
+
+        /*Universal selectors : Styles will be applied to all the elements in the webpage*/
+        * {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        /*To apply the same styles to the elements we can use all the elements separated by ','*/
+        h3,
+        h4 {
+            color: violet;
+            text-align: justify;
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Hi Venkata Reddy</h1>
+    <p>Welcome to the Css tutorials</p>
+    <p>Login</p>
+    <!--Using the id selector to apply the style-->
+    <h1 id="h1tag">Hello Welcome to the w3schools</h1>
+
+    <!--Using the class selector to apply the style-->
+    <div class="para">
+        <p>Please hover over the text</p>
+        <h1>Hello</h1>
+    </div>
+    <!--We can use more than one class name for an html element and both the class styles 
+        will be applied to the elements-->
+    <div class="class-one class-two">
+        <h1>Challa venkata reddy</h1>
+    </div>
+    <h3>Venkata</h3>
+    <h4>Reddy</h4>
+</body>
+
+</html>

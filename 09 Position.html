@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .static {
+            position: static;
+            height: 100px;
+            width: 500px;
+            border: 1px solid red;
+            background-color: brown;
+        }
+
+        .absolute {
+            position: absolute;
+            height: 250px;
+            width: 250px;
+            border: 1px solid blue;
+            text-align: center;
+            right: 0px;
+            bottom: 0px;
+            background-color: burlywood;
+        }
+
+        .relative {
+            position: relative;
+            height: 500px;
+            width: 500px;
+            border: 1px solid bisque;
+            background-color: #ff4567;
+            top: 100px;
+            left: 100px;
+        }
+
+        .relative1 {
+            position: absolute;
+            border: 1px solid chartreuse;
+            height: 200px;
+            width: 200px;
+            background-color: white;
+            top: 100px;
+            left: 100px;
+        }
+
+        .fixed {
+            position: fixed;
+            border: 1px solid blue;
+            background-color: rgba(255, 128, 236, 0.5);
+            top: 0px;
+            left: 600px;
+        }
+
+        .sticky {
+            position: sticky;
+            width: 200px;
+            height: 100px;
+            border: 1px solid blue;
+            background-color: aqua;
+            top: 40px;
+            left: 600px;
+        }
+
+        .div5 {
+            height: 1000px;
+            width: 500px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!--An element with position: static;
+        is not positioned in any special way; it is always positioned according to the normal flow of the page:-->
+    <div class="static">
+        <h1>Hi Venkata Reddy</h1>
+    </div>
+    <!--An element with position: absolute;
+        is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).-->
+    <div class="absolute">
+        <h3>Hello Venkata</h3>
+    </div>
+    <!--An element with position: relative; is positioned relative to its normal position.-->
+    <div class="relative">
+        <h1>Hello Challa Venkata Reddy</h1>
+        <div class="relative1">
+            <h1>Welcome to the css Tutorials</h1>
+        </div>
+    </div>
+    <!--An element with position: fixed;
+        is positioned relative to the viewport,
+        which means it always stays in the same place even if the page is scrolled.-->
+    <div class="fixed">
+        <h4>Hello Venkata Reddy</h4>
+    </div>
+    <!--An element with position: sticky; is positioned based on the user's scroll position.-->
+    <div class="sticky">
+        <h5>Hello Venkata</h5>
+    </div>
+    <div class="div5"></div>
+</body>
+
+</html>

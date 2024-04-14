@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformations</title>
+    <style>
+        .one {
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            margin-bottom: 10px;
+        }
+
+        .one:hover {
+            transform: translate(100px, 200px);
+        }
+
+        .two {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            transition: 4s;
+            margin-bottom: 20px;
+        }
+
+        .two:hover {
+            transform: scale(2, 3);
+        }
+
+        .three {
+            height: 100px;
+            width: 100px;
+            background-color: violet;
+            transition: 4s;
+            margin-bottom: 40px;
+        }
+
+        .three:hover {
+            transform: rotate(45deg);
+        }
+
+        .four {
+            height: 100px;
+            width: 100px;
+            background-color: mediumspringgreen;
+            transition: 4s;
+        }
+
+        .four:hover {
+            transform: skewX(-30deg)
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="four"></div>
+</body>
+
+</html>

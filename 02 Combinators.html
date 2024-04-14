@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators</title>
+    <style>
+        div>p {
+            font-size: large;
+            background-color: black;
+        }
+
+        div p {
+            color: red;
+        }
+
+        p+h4 {
+            color: blue;
+        }
+
+        div~p {
+            background-color: violet;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Child Selector (>)-->
+    <!--The child selector selects all elements that are the children of a specified element.
+        The following example selects all <p> elements that are children of a <div> element:-->
+    <div>
+        <p>Challa</p>
+        <section>
+            <p>Venkata</p>
+        </section>
+        <h4>Reddy</h4>
+        <p>Hello</p>
+    </div>
+    <!--descendant selector (space)-->
+    <!--The descendant selector matches all elements that are descendants of a specified element.
+        The following example selects all <p> elements inside <div> elements: -->
+    <div>
+        <p>Challa</p>
+        <section>
+            <p>Venkata</p>
+        </section>
+        <h4>Reddy</h4>
+    </div>
+    <!--Adjacent Sibling Selector (+)-->
+    <!--The adjacent sibling selector is used to select an element that is directly after
+        another specific element.-->
+    <div>
+        <p>challa</p>
+        <h4>Reddy</h4>
+        <h4>Venkata</h4>
+    </div>
+    <!--General Sibling Selector (~)-->
+    <!--The general sibling selector selects all elements that are next siblings of a specified element.
+        The following example selects all <p> elements that are next siblings of <div> elements-->
+    <div>
+        <h4>Reddy</h4>
+    </div>
+    <p>Challa</p>
+    <h1>hello</h1>
+    <p>Venkata</p>
+</body>
+
+</html>

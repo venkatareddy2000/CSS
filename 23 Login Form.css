@@ -1,0 +1,96 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f6f6f6;
+    color: #48525c;
+    overflow: hidden;
+}
+
+.container {
+    width: 400px;
+    height: 500px;
+    padding: 16px;
+    border-radius: 4px;
+    box-shadow: -6px 2px 26px #18181800,
+        inset 0px 0px 5px 8px #ffffff,
+        inset 8px -9px 6px -5px #ffffff1f,
+        inset -7px 10px 6px -5px #13131336,
+        5px -5px 26px #5e5e5e1f;
+    background: #f6f6f6;
+    margin: 10vh auto;
+}
+
+.container .title {
+    text-align: center;
+    margin: 38px auto;
+}
+
+.container form {
+    display: block;
+}
+
+.container form input,
+.container form button {
+    outline: none;
+    border: none;
+    display: block;
+    font-size: 16px;
+    margin: 32px auto;
+}
+
+.container form input {
+    width: 100%;
+    height: 48px;
+    padding: 0 16px;
+    color: #48525c;
+    border-radius: 32px;
+    background: #f6f6f6;
+    box-shadow: inset 3px 3px 7px rgb(187, 187, 187),
+        inset -6px -6px 7px #ffffff;
+}
+
+.container form input:focus {
+    box-shadow: -7px -7px 20px 0px #fff9,
+        -4px -4px 5px 0px #fff9;
+}
+
+.container form input::placeholder {
+    font-size: 15px;
+}
+
+.container form button {
+    cursor: pointer;
+    padding: 14px 24px;
+    width: 100%;
+    text-align: center;
+    border-radius: 32px;
+    color: white;
+    background: #4b70e2;
+    box-shadow: -7px -7px 20px 0px #fff9,
+        -4px -4px 5px 0px #fff9;
+
+}
+
+.container form button:hover {
+    opacity: 90%;
+}
+
+div.bottom {
+    font-size: 80%;
+    text-align: center;
+    margin: 50px auto;
+    font-size: 15px;
+}
+
+div.bottom a {
+    color: #48525c;
+    text-decoration: underline;
+}
+
+div.bottom .forget-password {
+    display: block;
+}

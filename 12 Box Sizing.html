@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing</title>
+    <style>
+        /*If you set box-sizing: content-box; on an element, padding and border are excluded in the width and height*/
+        .contentbox {
+            box-sizing: content-box;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            padding: 40px;
+            border: solid 10px violet;
+        }
+
+        /*If you set box-sizing: border-box; on an element, padding and border are included in the width and height*/
+        .borderbox {
+            width: 200px;
+            height: 200px;
+            font-size: 40px;
+            background-color: violet;
+            box-sizing: border-box;
+            border: solid 5px red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contentbox">
+        <h1>Hello Venkata Reddy</h1>
+    </div><br>
+    <div class="borderbox">
+        <h1>Hello Venkata Reddy</h1>
+    </div>
+</body>
+
+</html>

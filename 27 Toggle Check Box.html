@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Check Box</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        input[type="checkbox"] {
+            position: relative;
+            width: 80px;
+            height: 40px;
+            border-radius: 20px;
+            background-color: #c6c6c6;
+            appearance: none;
+            transition: 0.5s;
+        }
+
+        input:checked[type="checkbox"] {
+            background-color: #03a9f5;
+        }
+
+        input[type="checkbox"]::before {
+            content: '';
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: white;
+            transition: 0.5s;
+        }
+
+        input:checked[type="checkbox"]::before {
+            left: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <input type="checkbox">
+    </div>
+</body>
+
+</html>

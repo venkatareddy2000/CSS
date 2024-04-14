@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <style>
+        h1::first-letter {
+            text-transform: capitalize;
+            color: red;
+        }
+
+        h2::before {
+            content: "Hello ";
+            color: violet;
+        }
+
+        h2::after {
+            content: ", How are you?";
+            color: red;
+        }
+
+        h1::selection {
+            background-color: red;
+            color: white;
+        }
+
+        p::first-line {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>venkata Reddy</h1>
+    <h2>Venkata Reddy</h2>
+    <p>Learning Solutions:
+        Another beginner-friendly course, this one focuses on building responsive websites using HTML5 and CSS3.
+        It covers key concepts and techniques with practical examples and projects.
+        Before enrolling in any course, be sure to check the reviews and course curriculum to ensure it aligns with your
+        learning goals. Additionally, Udemy often offers discounts on courses, so keep an eye out for promotions to get
+        the best value for your money.</p>
+</body>
+
+</html>

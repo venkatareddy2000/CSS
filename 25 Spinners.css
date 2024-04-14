@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    background-color: grey;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+
+.spinner1 {
+    position: relative;
+}
+
+.spinner1 .circle {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    animation : spin 2s linear infinite
+}
+
+.spinner1 .circle::before {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    content: ''; /* Add this line */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+        box-shadow: 1px 5px 3px #ec7c17;
+    }
+    50%{
+        transform: rotate(180deg);
+        box-shadow: 1px 5px 3px #18b201;
+    }
+    100%{
+        transform: rotate(360deg);
+        box-shadow: 1px 5px 3px #327be0;
+    }
+}
+span{
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    top: 48%;
+    transform: translateX(-50%);
+    animation: blink 2s linear infinite;
+}
+
+@keyframes blink{
+    50%{
+        color: transparent;
+    }
+}
+
+.circle2 {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 10px solid #f3f3f4;
+    border-top: 10px solid #3498db;
+    animation : spin2 2s linear infinite
+}
+@keyframes spin2{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

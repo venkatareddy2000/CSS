@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient</title>
+    <style>
+        .one {
+            height: 100px;
+            width: 100px;
+            background: linear-gradient(to right, red, blue, yellow);
+            margin-bottom: 10px;
+        }
+
+        .two {
+            height: 100px;
+            width: 100px;
+            background: radial-gradient(red, blue, yellow);
+            margin-bottom: 10px;
+        }
+
+        .three {
+            height: 100px;
+            width: 100px;
+            background: repeating-linear-gradient(red 10%, blue 20%, yellow 30%);
+            margin-bottom: 10px;
+        }
+
+        .four {
+            height: 100px;
+            width: 100px;
+            background: repeating-radial-gradient(red 10%, blue 20%, yellow 30%);
+            margin-bottom: 10px;
+        }
+
+        .name {
+            font: bold;
+            font-size: 100px;
+            background: linear-gradient(to right, red, blue, yellow);
+            color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="four"></div>
+    <div class="name">Venkata Reddy</div>
+</body>
+
+</html>
